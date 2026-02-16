@@ -1,0 +1,19 @@
+.container{
+    height: 48px;
+    border-radius: 7px;
+    border: 1px solid #D5D7DA;
+    padding: 13px 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.image{
+    width: 21px;
+    height: 21px;
+}
+.text{
+    font-weight: 600;
+    font-size: 16px;
+    color: #414651;
+    /* color: aqua; */
+}

@@ -1,0 +1,36 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+.subContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.leftContainer{
+    display: flex;
+    gap: 24px;
+}
+.copyright{
+    font-weight: 400;
+    font-size: 14px;
+}
+.links{
+    display: flex;
+    gap: 24px;
+}
+.link{
+    font-size: 14px;
+    font-weight: 400;
+}
+.rightContainer{
+    display: flex;
+    gap: 12px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

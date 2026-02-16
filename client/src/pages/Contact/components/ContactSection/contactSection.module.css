@@ -1,0 +1,97 @@
+.container{
+    width: 1440px;
+    height: 781px;
+    display: flex;
+    gap: 40px;
+    padding: 48px 82px;
+}
+.leftContainer{
+    height: 685px;
+    width: 576px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 16px;
+}
+.title{
+    font-weight: 700;
+    font-size: 32px;
+    height: 78px;
+    width: 330px;
+}
+.subTitle{
+    font-weight: 600;
+    font-size: 20px;
+    height: 24px;
+    width: 544px;
+}
+.description{
+    font-weight: 500;
+    font-size: 16px;
+    height: 57px;
+    width: 544px;
+}
+.contact{
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+}
+.contactText{
+    font-weight: 400;
+    font-size: 20px;
+}
+.rightContainer{
+    width: 660px;
+    height: 685px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.form{
+    height: 573px;
+    width: 628px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.inputField{
+    height: 93px;
+    /* width: 628px; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.label{
+    height: 24px;
+    width: 628px;
+    display: flex;
+    gap: 10px;
+}
+.labelName{
+    font-weight: 700;
+    font-size: 20px;
+}
+.input{
+    height: 61px;
+    width: 628px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    padding: 16px;
+}
+.submitBtn{
+    height: 56px;
+    width: 166px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #2289FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}

@@ -1,0 +1,10 @@
+.container{
+    height: 143px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../../../../public//assets/heroImage.png") center/cover no-repeat;
+    background-color: #00000085;
+    background-blend-mode: overlay;
+}

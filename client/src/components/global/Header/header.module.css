@@ -1,0 +1,39 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #FFFFFFD6;
+    padding: 24px 39px;
+ 
+    
+}
+.buttons{
+    display: flex;
+    gap: 6px;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 18px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+  .buttons {
+    display: none;
+  }
+  .container{
+     padding: 5px 24px;
+     border-radius: 30px;
+  }
+}
+
+
+@media (max-width: 425px) {
+    .container {
+        padding: 10px 14px;
+        border-radius: 18px;
+    }
+}

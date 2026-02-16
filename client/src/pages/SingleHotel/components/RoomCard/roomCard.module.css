@@ -1,0 +1,54 @@
+.container{
+    width: 1276px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.subContainer{
+    display: flex;
+    gap: 16px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.card{
+    width: 307px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 16px;
+    gap: 12px;
+    box-shadow: 0 0 6px 0px #00000040;
+}
+.img{
+    height: 177px;
+    background-color: aqua;
+    border-radius: 21px;
+    background: url("../../../../../public/assets/heroImage.png") center/cover no-repeat;
+}
+.cardTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+}
+.description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #00000066;
+}
+.btn{
+    background-color: #2288FE;
+    padding: 10px 16px;
+    border-radius: 30px;
+    color: #EFF2F2;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}

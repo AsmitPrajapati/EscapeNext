@@ -1,0 +1,48 @@
+.container{
+    background-color: #FFFFFF;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 14px;
+}
+.topSection{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.bottomSection{
+    display: flex;
+    gap: 24px;
+}
+.policyTitle{
+    width: 183px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.policyList{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.text{
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+.bullet{
+    margin-top: 5px;
+    margin-left: 5px;
+    flex-shrink: 0; 
+}

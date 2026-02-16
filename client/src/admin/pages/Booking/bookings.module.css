@@ -1,0 +1,196 @@
+.bookingsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+  overflow-x: auto;
+}
+
+.bookingsHeader {
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+}
+
+.table{
+  max-width: 1147px;
+  width: 100%;
+  /* table-layout: fixed; */
+}
+
+.tableHead{
+  /* width: 100%; */
+  display: flex;
+  border: 0 0 1px 0 solid #85858533;
+}
+
+.title{
+  max-width: 163px;
+  width: 100%;
+  padding: 10px 33px;
+  color: #858585;
+}
+
+.tableRow{
+  display: flex;
+  gap: 6px;
+  padding: 8px 0;
+  border: 1px solid #78787833;
+}
+
+.tableData{
+  max-width: 158px;
+  width: 100%;
+  /* text-align: center; */
+  padding: 10px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  color: #858585;
+}
+
+.name{
+  color: #000000;
+}
+
+.mail{
+  max-width: 100%;
+  /* display: block; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  word-break: break-all;
+}
+
+.active{
+  color: #1FE0AC;
+}
+
+.pending{
+  color: #F5BD0D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+
+.bookingsTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.bookingsStats {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.bookingsControls {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bulkAction {
+  padding: 0.5rem 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.375rem;
+  background-color: white;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table thead {
+  background-color: #f5f5f5;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  font-size: 0.875rem;
+}
+
+.table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badgeActive {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.badgePending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badgePaid {
+  background-color: #dbeafe;
+  color: #0c4a6e;
+}
+
+.badgeDue {
+  background-color: #fee2e2;
+  color: #7f1d1d;
+}
+
+.addButton {
+  padding: 0.5rem 1rem;
+  background-color: #0066ff;
+  color: white;
+  border: none;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.addButton:hover {
+  background-color: #0052cc;
+} */

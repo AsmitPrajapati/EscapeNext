@@ -1,0 +1,67 @@
+.booking{
+    width: 100%;
+    padding: 24px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+.subContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.header{
+    border-bottom: 1px solid #00000066;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 12px;
+    padding: 13px 0;
+}
+.title{
+    font-size: 32px;
+    font-weight: 600;
+}
+.tag{
+    width: 176px;
+    background-color: #EBEBEB;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.details{
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.detailsTitle{
+    font-size: 20px;
+    font-weight: 600;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 400;
+}
+.bookingDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+.firstItem{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3E921C;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-weight: 400;
+    font-size: 16px;
+}

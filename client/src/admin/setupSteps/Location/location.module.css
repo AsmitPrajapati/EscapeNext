@@ -1,0 +1,94 @@
+
+
+.container {
+  max-width: 1147px;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 24px;
+  padding: 24px;
+  border-radius: 20px;
+}
+
+.formGroup {
+  max-width: 587px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.locationFormSection {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.inputSection{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 587px;
+  width: 100%;
+}
+
+.inputContainer{
+  display: flex;
+  gap: 24px;
+}
+
+.checkboxSection{
+  display: flex;
+  gap: 8px;
+}
+.checkboxLabel{
+  color: #0000009C;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.formLabel {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.formInput {
+  width: 100%;
+  padding:16px;
+  border: 1px solid #00000066;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.formInput:focus {
+  outline: none;
+  border-color: #0066ff;
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+}
+
+.currentLocationButton {
+  max-width: 200px;
+  background: none;
+  border: none;
+  color: #0066ff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.mapContainer {
+  width: 100%;
+  max-width: 488px;
+  max-height: 488px;
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .locationGrid {
+    grid-template-columns: 1fr;
+  }
+}

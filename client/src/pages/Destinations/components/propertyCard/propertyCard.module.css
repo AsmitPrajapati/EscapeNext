@@ -1,0 +1,144 @@
+.card{
+    height: 266px;
+    max-width: 936px;
+    width: 100%;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 0px 0px 4px 0px #00000040;
+}
+.cardImg{
+    height: 215px;
+    width: 238px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.discountTag{
+    height: 31px;
+    width: 95px;
+    position: absolute;
+    background-color: #FF5A5F;
+    border-radius: 8px;
+    padding: 8px 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    top: 6px;
+    left: 4.5px;
+    border-radius: 12px;
+}
+.content{
+    height: 218px;
+    width: 635px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.hotelDetails{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.hotelInfo{
+    display: flex;
+    flex-direction: column;
+    align-content:space-between ;
+}
+.hotelName{
+    font-size: 24px;
+    font-weight: 600;
+}
+.subInfo{
+    font-size: 16px;
+    font-weight: 400;
+}
+.ratingDetails{
+    height: 44px;
+    width: 122px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+.rating{
+    font-size: 16px;
+    font-weight: 500;
+    color: #3E921C;
+    display: flex;
+    gap: 4px;
+}
+.ratingScore{
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #BEFAA7;
+    padding: 2px 6px;
+    border-radius: 19px;
+}
+.review{
+    font-size: 16px;
+    font-weight: 500;
+    color: #00000094;
+}
+.hotelCategory{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2289FF;
+}
+.roomDetails{
+    height: 66px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.roomInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.feature{
+    font-weight: 600;
+}
+.priceDetails{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 400;
+}
+.price{
+    font-size: 20px;
+    font-weight: 700;
+}
+.tagsInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.tags{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.tag, .bookNowBtn{
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.tag{
+    border: 1.35px solid #2289FF;
+    color: #2289FF;
+}
+.bookNowBtn{
+    background-color: #2288FE;
+    border: none;
+    color: #EFF2F2;
+}

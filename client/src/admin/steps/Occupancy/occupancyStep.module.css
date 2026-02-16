@@ -1,0 +1,88 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.subContainer{
+  padding: 24px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.title{
+  font-weight: 700;
+  font-size: 20px;
+}
+.formGroup{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.formUp{
+  display: flex;
+  justify-content: space-between;
+}
+.subTitle{
+  font-weight: 600;
+  font-size: 20px;
+}
+.formDown{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text{
+  max-width: 555px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.qtyContainer{
+  display: flex;
+}
+.qtyBox{
+  padding: 10px 28px;
+  border: 1px solid #000000;
+  font-weight: 600;
+  font-size: 20px;
+}
+.qtyBtn{
+  padding: 10px 28px;
+  border: 1px solid #000000;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: #FFFFFF;
+}
+.inputSection{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 587px;
+  width: 100%;
+}
+.formLabel {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.formInput {
+  width: 100%;
+  padding:16px;
+  border: 1px solid #00000066;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+.checkboxSection{
+  display: flex;
+  gap: 8px;
+}
+.checkboxLabel{
+  color: #0000009C;
+  font-size: 16px;
+  font-weight: 400;
+}

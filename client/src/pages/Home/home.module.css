@@ -1,0 +1,16 @@
+.home{
+    background-color: #EFF5FF;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.list{
+    height: 150px;
+    /* width: 1440px; */
+    width: 100%;
+
+    padding: 48px 0 82px 0;
+    display: flex;
+    justify-content: center;
+}

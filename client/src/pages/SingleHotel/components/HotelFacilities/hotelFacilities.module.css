@@ -1,0 +1,41 @@
+.container{
+    border-radius: 14px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+}
+.header{
+    padding: 24px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+.subContainer{
+    width: 1228px;
+    display: flex;
+    justify-content: space-between;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.sectionHeader{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #2289FF;
+}
+.sectionItem{
+    font-size: 16px;
+    font-weight: 400;
+}

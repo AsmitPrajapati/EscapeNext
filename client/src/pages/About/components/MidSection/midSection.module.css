@@ -1,0 +1,70 @@
+.container{
+    width: 1440px;
+    height: 998px;
+    margin-bottom: 32px;
+    padding: 100px 82px;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+.first{
+    width: 1276px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+.firstTop{
+    width: 189px;
+    height: 48px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2289FF;
+    text-align: center;
+}
+.firstBottom{
+    width: 1276px;
+    height: 158px;
+    display: flex;
+    gap: 48px;
+}
+.bottomCard{
+    width: 393px;
+    height: 158px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.cardHeading{
+    height: 39px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.cardText{
+    height: 95px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.second{
+    width: 1276px;
+    height: 464px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    align-items: center;
+}
+.secondHeading{
+    width: 1104px;
+    height: 48px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #2289FF;
+    text-align: center;
+}
+.cardSection{
+    width: 1276px;
+    height: 348px;
+    display: flex;
+    gap: 48px;
+}

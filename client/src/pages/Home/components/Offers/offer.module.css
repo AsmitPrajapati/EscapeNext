@@ -1,0 +1,50 @@
+.offerSection{
+    /* width: 1440px; */
+    width: 100%;
+    /* height: 174px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 82px;
+}
+.offerHeader{
+    max-width: 391px;
+    width: 100%;
+
+    /* height: 78px; */
+    font-size: 32px;
+    font-weight: 700;
+}
+.offerFilter{
+    max-width: 590px;
+    width: 100%;
+
+    /* height: 56px; */
+    display: flex;
+    gap: 31px;
+}
+.filterBtn{
+    /* height: 56px; */
+    padding: 16px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.filterBtn1{
+    max-width: 143px;
+    width: 100%;
+
+    /* height: 56px; */
+    padding: 16px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.filterBtn:hover, .filterBtn1:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.highlight{
+    color: #2289FF;
+}

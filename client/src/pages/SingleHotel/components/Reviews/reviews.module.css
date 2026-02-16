@@ -1,0 +1,147 @@
+.container{
+    width: 1276px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 24px;
+    border-radius: 14px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.totalReviews{
+    padding: 10px 16px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #05073C;
+}
+.filterButtons{
+    display: flex;
+    gap: 16px;
+}
+.active{
+    color: #2289FF;
+    border: none;
+    background-color: #EEF1F5;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.notActive{
+    background-color: #FFFFFF;
+    border: 1px solid #0000004D;
+    border-radius: 20px;
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #00000033
+}
+.mailInput{
+    width: 318px;
+    display: flex;
+    border: 1px solid #00000099;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px;
+}
+.contactBtn{
+    border: 1px solid #000000;
+    padding: 12px 24px;
+    background-color: #122620;
+    color: #FFFFFF;
+    border-radius: 10px;
+}
+.title{
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.rating{
+    font-size: 16px;
+    font-weight: 600;
+}
+.text1, .text2 {
+    font-size: 16px;
+    font-weight: 400;
+}
+.text2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.viewAll{
+    border-bottom: 1px solid #00000033;
+    padding: 10px 16px;
+    color: #2289FF;
+    font-size: 18px;
+    font-weight: 700;
+}
+.right{
+    width: 382px;
+    display: flex;
+    flex-direction: column;
+}
+.overallRating{
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    color: #05073C;
+}
+.overall{
+    font-size: 18px;
+    font-weight: 700;
+}
+.excellent{
+    font-size: 18px;
+    font-weight: 500;
+}
+.total{
+    font-size: 16px;
+    font-weight: 400;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.barContainer{
+    padding: 5px;
+    background-color:  #8C8585;
+    position: relative;
+}
+.barFill{
+    height: 100%;
+    position: absolute;
+    background-color: #000000;
+    top: 0px;
+    left: 0px;
+}
+.labelValue{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    color: #05073C;
+}
+.label{
+    font-weight: 400;
+}
+.value{
+    font-weight: 600;
+}

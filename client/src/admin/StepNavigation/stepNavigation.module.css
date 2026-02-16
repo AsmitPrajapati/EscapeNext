@@ -1,0 +1,18 @@
+.actions{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #FFFFFF;
+}
+
+.btn{
+    background-color: #c2c3c5;
+    color: #2289FF;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+}

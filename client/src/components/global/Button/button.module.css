@@ -1,0 +1,13 @@
+.buttonContainer{
+    /* height: 69px; */
+    border-radius: 10px;
+    padding: 10PX 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2288FE;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+    border: none;
+}

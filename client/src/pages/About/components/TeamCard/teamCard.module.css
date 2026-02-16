@@ -1,0 +1,38 @@
+.card{
+    width: 393px;
+    height: 348px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.profile{
+    height: 166px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+.imgSection{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background-color: #2289FF;
+}
+.name{
+    font-weight: 700;
+    font-size: 24px;
+}
+.designation{
+    font-weight: 600;
+    font-size: 18px;
+}
+.quotes{
+    height: 19px;
+    width: 22px;
+}
+.discription{
+    height: 95px;
+    font-weight: 500;
+    font-size: 16px;
+}

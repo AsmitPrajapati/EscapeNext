@@ -1,0 +1,143 @@
+.container{
+    width: 100%;
+    padding: 20px 64px;
+    background-color: #2289FF;
+    color: #FFFFFF;
+}
+.subContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.subContainerLeft{
+    max-width: 766px;
+    width: 100%;
+    display: flex;
+    gap: 40px;
+}
+.footerBrand{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footerTitle{
+    font-weight: 700;
+    font-size: 20px;
+}
+.footerText{
+    font-weight: 400;
+    font-size: 14px;
+}
+.footerColumn{
+    max-width: 158px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.footerHeading{
+    font-weight: 700;
+    font-size: 20px;
+}
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+}
+.footerLink{
+    padding: 8px 0;
+    font-weight: 400;
+    font-size: 14px;     
+}
+.subContainerRight{
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.subscribe{
+    display: flex;
+    flex-direction:column;
+    gap: 16px;
+}
+.subscribeHeading{
+    font-weight: 600;
+    font-size: 20px;
+}
+.subscribeText{
+    font-weight: 400;
+    font-size: 16px;
+}
+.mail{
+    display: flex;
+    flex-direction:column;
+    gap: 16px;
+}
+.mailBox{
+    display: flex;
+    gap: 16px;
+}
+.mailInput{
+    max-width: 380px;
+    width: 100%;
+    color: #FFFFFF;
+    border: none;
+    background-color: #2289FF;
+    border-bottom: 1px solid #575757;
+}
+.mailInput::placeholder{
+    color: #FFFFFF;
+}
+.mailBtn{
+    border-radius: 32px;
+    padding: 12px 27px;
+    background-color:#122620;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mailInput:focus{
+    outline: none;
+}
+.mailText{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+@media (max-width: 992px){
+    .subContainer{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .subContainerLeft{
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px){
+    .container{
+        padding: 20px 24px;
+    }
+
+    .footerTitle,
+    .footerHeading{
+        font-size: 18px;
+    }
+
+    .subscribeHeading{
+        font-size: 18px;
+    }
+
+    .mailBox{
+        flex-direction: column;
+    }
+
+    .mailBtn{
+        max-width: 100%;
+    }
+}

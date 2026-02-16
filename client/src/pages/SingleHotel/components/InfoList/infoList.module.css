@@ -1,0 +1,13 @@
+.container{
+    width: 1276px;
+    height: 30px;
+    border-bottom: 1px solid #0000003D;
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.listItem{
+    font-size: 16px;
+    font-weight: 500;
+}

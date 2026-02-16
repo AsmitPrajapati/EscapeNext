@@ -1,0 +1,148 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    gap: 39px;
+    align-items: center;
+    background-color: #B2CDED;
+    border-bottom: 1px solid #00000033;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.headerItem{
+    width: 350px;
+    padding: 0 12px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.roomContent{
+    display: flex;
+    gap: 40;
+    background: #FFFFFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.left{
+    width: 469px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.imgSection{
+    height: 251px;
+    width: 421px;
+    border-radius: 20px;
+    background-color: blue;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.roomInfo{
+    /* height: 95px; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.roomName{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.subInfo{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #00000033;
+}
+.amenities{
+    /* height: 134px; */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.amenitie{
+    height: 19px;
+    list-style: none;
+}
+.more{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2289FF;
+}
+.right{
+    width: 767px;
+    padding: 24px 0;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.options{
+    width: 738px;
+    display: flex;
+    gap: 40px;
+}
+.optionBox{
+    max-width: 374px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.features{
+    font-size: 16px;
+    font-weight: 400;
+}
+.firstItem{
+    color: #3E921C;
+}
+.priceBox{
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.offer{
+    width: 95px;
+    background-color: #EB662B;
+    padding: 8px 15px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+.price{
+    font-size: 24px;
+    font-weight: 600;
+}
+.tax{
+    font-size: 16px;
+    font-weight: 400;
+}
+.duration, .note{
+    font-size: 16px;
+    font-weight: 600;
+}
+.note{
+    color: #2289FF;
+}
+.bookBtn{
+    width: 108px;
+    border-radius: 30px;
+    border: none;
+    background-color: #2288FE;
+    padding: 10px 16px;
+    color: #EFF2F2;
+    font-size: 16px;
+    font-weight: 500;
+}

@@ -1,0 +1,73 @@
+.container{
+    height: 402px;
+    width: 1276px;
+    display: flex;
+    gap: 24px;
+}
+.mainImg{
+    width: 395px;
+    border-radius: 16px;
+    overflow: hidden;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.SubImg{
+    width: 301px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.upperImg, .lowerImg{
+    height: 181px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: url("../../../../../public/assets/mainHotel.jpg") center/cover no-repeat;
+    background-color: #0000008A;
+    background-blend-mode: overlay;
+}
+.content{
+    width: 532px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.title{
+    font-size: 24px;
+    font-weight: 600;
+}
+.features, .tax{
+    font-size: 16px;
+    font-weight: 400;
+}
+.price{
+    font-size: 48px;
+    font-weight: 600;
+}
+.btns{
+    height: 39px;
+    display: flex;
+    justify-content: center;
+}
+.cta{
+    width: 266px;
+    background-color: #2289FF;
+    color: #EFF2F2;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 16px;
+}
+.more{
+    width: 266px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #2289FF;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 16px;
+}

@@ -1,0 +1,36 @@
+.container{
+     max-width: 163px;
+    width: 100%;
+     min-width: 110px;  
+    /* height: 40px; */
+    border-radius: 10px;
+    border: 1px solid #2289FF;
+    padding: 8px 40px;
+    font-weight: 700;
+    font-size: 20px;
+    color: #2289FF;
+
+
+     display: inline-flex;      /* Better alignment */
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;       /* Prevent text breaking */
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        font-size: 18px;
+        padding: 8px 15px;
+    }
+}
+
+
+/* @media (max-width: 768px) {
+    .container {
+        width: 100%;          
+        font-size: 16px;
+        height: 44px;
+        padding: 8px 16px;
+    }
+} */

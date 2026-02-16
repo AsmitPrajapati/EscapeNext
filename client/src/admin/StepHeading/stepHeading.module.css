@@ -1,0 +1,15 @@
+.basicHeader{
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.basicTitle{
+  font-weight: 600;
+  font-size: 20px;
+}
+.subTitle{
+  font-weight: 600;
+  font-size: 16px;
+  color: #858585;
+}

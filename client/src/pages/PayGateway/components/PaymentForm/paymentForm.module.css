@@ -1,0 +1,74 @@
+.container{
+  max-width: 1276px;
+  width: 100%;
+}
+.subContainer{  
+  max-width: 588px;
+  width: 100%;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 12px 0;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  
+}
+.label {
+  font-size: 18px;
+  font-weight: 600;
+}
+.input {
+  border: 1px solid #0000004D;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 14px;
+  background-color: #F2F7FA;
+  outline: none;
+}
+.input::placeholder{
+  font-size: 18px;
+  font-weight: 500;
+  color: #00000066;
+}
+.input:focus {
+  border-color: #007bff;
+  background: #fff;
+}
+.cardIcons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #F2F7FA;
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid #0000004D;
+}
+.checkboxRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.payBtn {
+  width: 208px;
+  background-color: #2289FF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 70px;
+  font-weight: 400;
+  font-size: 16px;
+}
+

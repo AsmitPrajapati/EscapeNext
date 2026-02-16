@@ -1,0 +1,70 @@
+.stepsContainer {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.step {
+  width: 118px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.stepNumber {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 25px;
+  background-color: #767676;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 2px solid transparent;
+}
+
+.stepNumber:hover {
+  border-color: #0066ff;
+}
+
+.stepNumber.active {
+  background-color: #0066ff;
+  color: white;
+  box-shadow: 0 0 0 4px rgba(0, 102, 255, 0.1);
+}
+
+.stepNumber.completed {
+  background-color: #10b981;
+  color: white;
+}
+
+.stepLabel {
+  text-align: center;
+  font-size: 12.73px;
+  font-weight: 600;
+  color: #767676;
+}
+
+.stepLabel.active {
+  color: #0066ff;
+  font-weight: 600;
+}
+
+.stepLabel.completed {
+  color: #10b981;
+}
+
+.stepConnector {
+  width: 140px;
+  border: 3.65px solid #767676;
+}
+
+.stepConnector.completed {
+  background-color: #10b981;
+}
