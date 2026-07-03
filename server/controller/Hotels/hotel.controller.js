@@ -56,6 +56,26 @@ exports.hotelGet = async (req, res) => {
   }
 };
 
+// GET — Get a hotel by ID
+exports.getHotelById = async (req, res) => {
+  try {
+    const id = req.params.id;
+
+    const hotel = await hotelModel.findById(id);
+
+    if (!hotel) {
+      return res.status(404).json({ message: "Hotel not found" });
+    }
+
+    res.status(200).json({
+      message: "Hotel fetched successfully",
+      data: hotel,
+    });
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
 // UPDATE — Update a hotel by ID
 exports.hotelUpdate = async (req, res) => {
   try {

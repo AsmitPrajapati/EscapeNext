@@ -1,13 +1,26 @@
-.buttonContainer{
-    /* height: 69px; */
-    border-radius: 10px;
-    padding: 10PX 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2288FE;
-    font-weight: 700;
-    font-size: 24px;
-    color: #FFFFFF;
-    border: none;
+.buttonContainer {
+  /* height: 69px; */
+  border-radius: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2288fe;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  border: none;
+}
+
+@media (max-width: 639px) {
+  .buttonContainer {
+    font-size: 16px;
+    padding: 10px 14px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .buttonContainer {
+    font-size: 18px;
+  }
 }

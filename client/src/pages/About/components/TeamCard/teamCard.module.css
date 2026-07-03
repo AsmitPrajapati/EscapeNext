@@ -1,38 +1,65 @@
-.card{
-    width: 393px;
-    height: 348px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
+.card {
+  max-width: 393px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
-.profile{
-    height: 166px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
+.profile {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
 }
-.imgSection{
-    height: 85px;
-    width: 85px;
-    border-radius: 50%;
-    background-color: #2289FF;
+.imgSection {
+  height: 85px;
+  width: 85px;
+  border-radius: 50%;
+  background-color: #2289ff;
 }
-.name{
-    font-weight: 700;
-    font-size: 24px;
+.name {
+  font-weight: 700;
+  font-size: 24px;
 }
-.designation{
-    font-weight: 600;
+.designation {
+  font-weight: 600;
+  font-size: 18px;
+}
+.quotes {
+  height: 19px;
+  width: 22px;
+}
+.discription {
+  height: auto;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media (max-width: 1023px) {
+  .card {
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 639px) {
+  .card {
+    max-width: 100%;
+    padding: 12px;
+  }
+  .imgSection {
+    height: 72px;
+    width: 72px;
+  }
+  .name {
     font-size: 18px;
-}
-.quotes{
-    height: 19px;
-    width: 22px;
-}
-.discription{
-    height: 95px;
-    font-weight: 500;
-    font-size: 16px;
+  }
+  .designation {
+    font-size: 14px;
+  }
+  .discription {
+    font-size: 14px;
+  }
 }

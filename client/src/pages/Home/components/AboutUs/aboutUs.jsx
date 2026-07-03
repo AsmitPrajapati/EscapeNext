@@ -14,7 +14,7 @@ function AboutUs(){
             const res = await fetch(`${BASE_URL}/clients/get`);
             const data = await res.json();
             setClients(data.data);
-        } catch (error) {
+        } catch (err) {
             console.error(err);
         } 
     }; 

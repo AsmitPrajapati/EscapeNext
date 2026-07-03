@@ -1,19 +1,34 @@
-.FormField{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.FormField {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.FormInputLabelContainer{
-    display: flex;
-    gap: 10px;
+.FormInputLabelContainer {
+  display: flex;
+  gap: 10px;
 }
-.rFormInputLabel{
-    font-size: 24px;
-    font-weight: 400;
+.rFormInputLabel {
+  font-size: 24px;
+  font-weight: 400;
 }
-.FormInput{
-    /* height: 61px; */
-    padding: 15px 9px;
-    border-radius: 9px;
-    border: 1px solid #000000;
+.FormInput {
+  /* height: 61px; */
+  padding: 15px 9px;
+  border-radius: 9px;
+  border: 1px solid #000000;
+}
+
+@media (max-width: 639px) {
+  .rFormInputLabel {
+    font-size: 16px;
+  }
+  .FormInput {
+    padding: 12px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .rFormInputLabel {
+    font-size: 18px;
+  }
 }

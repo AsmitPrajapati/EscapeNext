@@ -9,6 +9,7 @@ import RoomInfo from './components/RoomInfo/roomInfo';
 import PaymentForm from './components/PaymentForm/paymentForm';
 
 function PayGateway() {
+    
 
     return (
         <div>

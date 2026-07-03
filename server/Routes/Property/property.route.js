@@ -2,8 +2,9 @@
 const express = require("express");
 const router = express.Router();
 const upload = require("../../utils/multer/multer");
-const { createProperty } = require("../../controller/Property/property.controller");
+const propertyController = require("../../controller/Property/property.controller");
 
-router.post("/property",upload.array("photos", 20),createProperty);
+router.post("/property",upload.array("photos", 20),propertyController.createProperty);
+router.get("/property/get", propertyController.getAllProperties);
 
 module.exports = router;

@@ -8,7 +8,7 @@ import ContactSection from "./components/ContactSection/contactSection";
 function Contact({text,type}){
     return(
         <div>
-            <HeroSection heading="Contact Us" text="Laoreet sit amet cursus sit amet dictum sit amet justo." />
+            <HeroSection heading="Contact Us" text="Laoreet sit amet cursus sit amet dictum sit ametjusto." />
             <ContactSection />
             <Footer />
             <FooterStrip />

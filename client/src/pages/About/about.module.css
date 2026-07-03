@@ -1,6 +1,19 @@
-.about{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Responsive container padding for About page */
+@media (max-width: 639px) {
+  .about {
+    padding: 12px;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .about {
+    padding: 16px 20px;
+  }
 }

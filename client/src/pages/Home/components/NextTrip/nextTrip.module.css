@@ -1,7 +1,8 @@
 .container{
     /* width: 1440px; */
     width: 100%;
-    height: 497px;
+    /* height: 497px; */
+    min-height: 500px;
     background: url(../../../../../public/assets/nextTrip.jpg) center/cover no-repeat;
 }
 .top{
@@ -70,4 +71,85 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .content {
+        margin-left: 40px;
+        max-width: 500px;
+    }
+
+    .heading {
+        font-size: 28px;
+    }
+
+    .text {
+        font-size: 32px;
+    }
+
+    .place {
+        font-size: 24px;
+    }
+}
+
+/* ================= MOBILE (≤768px) ================= */
+@media (max-width: 768px) {
+    .container {
+        min-height: auto;
+    }
+
+    .top {
+        padding: 16px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .bottom {
+        padding: 30px 20px;
+    }
+
+    .content {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0;
+        gap: 16px;
+    }
+
+    .text {
+        font-size: 26px;
+    }
+
+    .place {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* ================= SMALL MOBILE (≤480px) ================= */
+@media (max-width: 480px) {
+    .heading {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 22px;
+    }
+
+    .place {
+        font-size: 18px;
+    }
+
+    .location {
+        gap: 8px;
+    }
 }

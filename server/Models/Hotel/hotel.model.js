@@ -68,64 +68,64 @@
 
 
 
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
-const hotelSchema = new mongoose.Schema(
-  {
-    name: String,
-    discount: String,
-    images: [String],
+// const hotelSchema = new mongoose.Schema(
+//   {
+//     name: String,
+//     discount: String,
+//     images: [String],
 
-    subInfo: String,
-    category: String,
+//     subInfo: String,
+//     category: String,
 
-    rating: String,
-    ratingText: String,
-    reviews: String,
+//     rating: String,
+//     ratingText: String,
+//     reviews: String,
 
-    roomType: String,
-    bed: String,
-    bathroom: String,
-    tags: [String],
+//     roomType: String,
+//     bed: String,
+//     bathroom: String,
+//     tags: [String],
 
-    price: String,
-    taxInfo: String,
-    duration: String,
+//     price: String,
+//     taxInfo: String,
+//     duration: String,
 
-    // location
-    address: String,
-    lat: Number,
-    lng: Number,
+//     // location
+//     address: String,
+//     lat: Number,
+//     lng: Number,
 
-    // rooms shown below main card
-    rooms: [
-      {
-        name: String,
-        image: String,
-        sleeps: Number,
-        price: String,
-        refundable: String,
-        cancellationPolicy: String,
-        breakfast: String,
-      },
-    ],
+//     // rooms shown below main card
+//     rooms: [
+//       {
+//         name: String,
+//         image: String,
+//         sleeps: Number,
+//         price: String,
+//         refundable: String,
+//         cancellationPolicy: String,
+//         breakfast: String,
+//       },
+//     ],
 
-    // nearby places
-    nearby: [
-      {
-        name: String,
-        distance: String,
-        category: String,
-      },
-    ],
+//     // nearby places
+//     nearby: [
+//       {
+//         name: String,
+//         distance: String,
+//         category: String,
+//       },
+//     ],
 
-    // facilities
-    facilities: [String],
+//     // facilities
+//     facilities: [String],
 
-    // policies section
-    policies: [String],
-  },
-  { timestamps: true }
-);
+//     // policies section
+//     policies: [String],
+//   },
+//   { timestamps: true }
+// );
 
-module.exports = mongoose.model("Hotel", hotelSchema);
+// module.exports = mongoose.model("Hotel", hotelSchema);

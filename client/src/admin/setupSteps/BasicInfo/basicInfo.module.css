@@ -4,20 +4,20 @@
   gap: 24px;
   padding: 32px;
   border-radius: 8px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
-.top{
+.top {
   padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.section{
+.section {
   display: flex;
   gap: 24px;
 }
-.inputField{
+.inputField {
   max-width: 505px;
   width: 100%;
   display: flex;
@@ -25,7 +25,7 @@
   gap: 16px;
   position: relative;
 }
-.label{
+.label {
   font-weight: 700;
   font-size: 16px;
   color: #000000;
@@ -39,31 +39,31 @@
   transition: border-color 0.2s;
   appearance: none;
 }
-.abcc{
+.abcc {
   padding: 16px;
   border: 1px solid #00000066;
-  background-color: #DCE5F0;
+  background-color: #dce5f0;
 }
 .formInput:focus {
   outline: none;
   border-color: #0066ff;
   box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
 }
-.check{
+.check {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.checkSection{
+.checkSection {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.radioActions{
+.radioActions {
   display: flex;
   gap: 16px;
 }
-.radioField{
+.radioField {
   padding: 10px 0;
   display: flex;
   gap: 10px;
@@ -71,28 +71,24 @@
 .radioLabel {
   font-size: 16px;
   font-weight: 600;
-  color: #05073C;
+  color: #05073c;
 }
-.bottom{
+.bottom {
   display: flex;
   flex-direction: column;
-  gap: 24px ;
+  gap: 24px;
   padding: 24px;
 }
-.head{
+.head {
   font-size: 20px;
   font-weight: 700;
 }
 
-
-
-
-
 .customSelect {
-  height: 51px;
+  /* height: 51px; */
   border: 1px solid #cccccc;
   border-radius: 8px;
-  padding: 0 14px;
+  /* padding: 0 14px; */
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -121,8 +117,8 @@
   overflow: hidden;
   background: #fff;
   z-index: 20;
-  position: absolute;    
-  top: calc(100% + 6px); 
+  position: absolute;
+  top: calc(100% + 6px);
   animation: fadeIn 0.15s ease-in-out;
 }
 
@@ -136,7 +132,6 @@
     transform: translateY(0);
   }
 }
-
 
 .dropdownItem {
   padding: 14px;
@@ -154,6 +149,60 @@
 }
 
 .activeItem {
+  background-color: #e6f1ff;
+  color: #1a73e8;
+}
+
+/* react-select styling to match .customSelect */
+:global(.react-select__control) {
+  /* height: 51px; */
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  /* padding: 0 14px; */
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: none;
+}
+:global(.react-select__control--is-focused) {
+  border-color: #0066ff;
+  box-shadow: 0 0 0 3px rgba(0, 102, 255, 0.1);
+}
+:global(.react-select__value-container) {
+  padding: 0;
+}
+:global(.react-select__single-value) {
+  color: #000;
+  font-size: 14px;
+}
+:global(.react-select__placeholder) {
+  color: #999;
+  font-size: 14px;
+}
+:global(.react-select__dropdown-indicator) {
+  /* padding: 0 6px; */
+  color: inherit;
+}
+:global(.react-select__indicator-separator) {
+  display: none;
+}
+:global(.react-select__menu) {
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  z-index: 20;
+  animation: fadeIn 0.15s ease-in-out;
+}
+:global(.react-select__option) {
+  padding: 14px;
+  font-size: 14px;
+}
+:global(.react-select__option--is-focused) {
+  background-color: #f3f8ff;
+}
+:global(.react-select__option--is-selected) {
   background-color: #e6f1ff;
   color: #1a73e8;
 }

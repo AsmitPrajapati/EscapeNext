@@ -16,7 +16,7 @@ import PhotosStep from "../../setupSteps/Photos/photos";
 import StepNavigation from "../../StepNavigation/stepNavigation";
 import Tabs from "../../tabs/tab";
 import StepHeading from "../../StepHeading/stepHeading";
-
+import { BASE_URL } from "../../../utils/constants";
 
 //  STEP CONSTANTS
 
@@ -33,126 +33,68 @@ const STEPS = {
   PHOTOS: "photos",
 };
 
-// STEP CONFIGURATION
-
-// const STEP_CONFIG = [
-//   {
-//     id: STEPS.PROPERTY_TYPE,
-//     component: PropertyTypeSelector,
-//     dataKey: "type",
-//   },
-//   {
-//     id: STEPS.BASIC_INFO,
-//     component: BasicInfoStep,
-//     dataKey: "basicInfo",
-//   },
-//   {
-//     id: STEPS.LOCATION,
-//     component: LocationStep,
-//     dataKey: "location",
-//   },
-//   {
-//     id: STEPS.ROOM_SETUP,
-//     component: RoomSetupStep,
-//     dataKey: "roomSetup",
-//   },
-//   {
-//     id: STEPS.AVAILABILITY,
-//     component: AvailabilityStep,
-//     dataKey: "availability",
-//   },
-//   {
-//     id: STEPS.ROOM_PRICE,
-//     component: RoomPriceStep,
-//     dataKey: "roomPrice",
-//   },
-//   {
-//     id: STEPS.OCCUPANCY,
-//     component: OccupancyStep,
-//     dataKey: "occupancy",
-//   },
-//   {
-//     id: STEPS.ROOM_DETAILS,
-//     component: RoomDetailsStep,
-//     dataKey: "roomDetails",
-//   },
-//   {
-//     id: STEPS.INVENTORY,
-//     component: InventoryStep,
-//     dataKey: "inventory",
-//   },
-//   {
-//     id: STEPS.PHOTOS,
-//     component: PhotosStep,
-//     dataKey: "photos",
-//   },
-// ];
-
-
 const STEP_CONFIG = [
   {
     id: STEPS.PROPERTY_TYPE,
     component: PropertyTypeSelector,
     dataKey: "type",
-    needsFullData: false
+    needsFullData: false,
   },
   {
     id: STEPS.BASIC_INFO,
     component: BasicInfoStep,
     dataKey: "basicInfo",
-    needsFullData: false
+    needsFullData: false,
   },
   {
     id: STEPS.LOCATION,
     component: LocationStep,
     dataKey: "location",
-    needsFullData: false
+    needsFullData: false,
   },
   {
     id: STEPS.ROOM_SETUP,
     component: RoomSetupStep,
     dataKey: "roomSetup",
-    needsFullData: false
+    needsFullData: false,
   },
   {
     id: STEPS.AVAILABILITY,
     component: AvailabilityStep,
     dataKey: "availability",
-    needsFullData: false
+    needsFullData: false,
   },
   {
     id: STEPS.ROOM_PRICE,
     component: RoomPriceStep,
-    dataKey: "price",
-    needsFullData: false
+    dataKey: "roomPrice",
+    needsFullData: false,
   },
   {
     id: STEPS.OCCUPANCY,
     component: OccupancyStep,
     dataKey: "occupancy",
-    needsFullData: false
+    needsFullData: false,
   },
   {
     id: STEPS.ROOM_DETAILS,
     component: RoomDetailsStep,
     dataKey: "roomDetails",
-    needsFullData: false
+    needsFullData: false,
   },
   {
     id: STEPS.INVENTORY,
     component: InventoryStep,
     dataKey: "inventory",
-    needsFullData: true
+    needsFullData: true,
   },
   {
     id: STEPS.PHOTOS,
     component: PhotosStep,
     dataKey: "photos",
-    needsFullData: false
+    needsFullData: false,
   },
 ];
-
-
 
 function PropertyForm({ propertyId, onBack }) {
   const [currentStepIndex, setCurrentStepIndex] = useState(propertyId ? 1 : 0);
@@ -163,28 +105,6 @@ function PropertyForm({ propertyId, onBack }) {
   const isLastStep = currentStepIndex === STEP_CONFIG.length - 1;
   const StepComponent = STEP_CONFIG[currentStepIndex].component;
   const stepKey = STEP_CONFIG[currentStepIndex].dataKey;
-
-  // const handleNext = () => {
-
-  //   setPropertyData((prev) => ({
-  //     ...prev,
-  //     [stepKey]: currentStepData,
-  //   }));
-
-  //   if (isLastStep) {
-  //     console.log("Final payload:", {
-  //       ...propertyData,
-  //       [stepKey]: currentStepData,
-  //     });
-  //     onBack();
-  //     return;
-  //   }
-
-  //   setCurrentStepIndex((i) => i + 1);
-  //   setCurrentStepData(null);
-  //   setIsStepValid(false);
-  // };
-
 
   const handleNext = async () => {
     const updatedData = {
@@ -202,40 +122,96 @@ function PropertyForm({ propertyId, onBack }) {
       return;
     }
 
-    // ---- FINAL STEP (multipart for multer) ----
-    const formData = new FormData();
+    if (isLastStep) {
+      try {
+        // ---- CREATE PROPERTY ----
+        const propertyForm = new FormData();
 
-    // append non-photo data as JSON fields
-    Object.entries(updatedData).forEach(([key, value]) => {
-      if (key !== "photos") {
-        formData.append(key, JSON.stringify(value));
+        propertyForm.append("propertyType", updatedData.type);
+        propertyForm.append("basicInfo", JSON.stringify(updatedData.basicInfo));
+        propertyForm.append("location", JSON.stringify(updatedData.location));
+
+        if (Array.isArray(updatedData.photos)) {
+          updatedData.photos.forEach((file) => {
+            propertyForm.append("photos", file);
+          });
+        }
+
+        const propertyRes = await fetch(`${BASE_URL}/api/property`, {
+          method: "POST",
+          body: propertyForm,
+        });
+
+        const propertyData = await propertyRes.json();
+
+        if (!propertyRes.ok) {
+          throw new Error(propertyData.message);
+        }
+
+        const propertyId = propertyData.propertyId;
+
+        // ---- CREATE ROOM ----
+        await fetch(`${BASE_URL}/api/rooms/create`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            propertyId,
+            roomSetup: updatedData.roomSetup,
+            availability: updatedData.availability,
+            roomPrice: updatedData.price,
+            occupancy: updatedData.occupancy,
+            roomDetails: updatedData.roomDetails,
+            // inventory: updatedData.inventory,
+          }),
+        });
+
+        console.log("Property & Room created");
+
+        onBack();
+      } catch (err) {
+        console.error("Submit error:", err);
       }
-    });
-
-    // append photos as File[] for multer
-    if (Array.isArray(updatedData.photos)) {
-      updatedData.photos.forEach(file => {
-        formData.append("photos", file);
-      });
     }
 
-    try {
-      const res = await fetch(`http://localhost:4000/api/property`, {
-        method: "POST",
-        body: formData, // IMPORTANT: no headers
-      });
+    //   // ---- FINAL STEP (multipart for multer) ----
+    //   const formData = new FormData();
 
-      if (!res.ok) throw new Error("Failed to create property");
+    //   // append non-photo data as JSON fields
+    //   Object.entries(updatedData).forEach(([key, value]) => {
+    //     if (key !== "photos") {
+    //       formData.append(key, JSON.stringify(value));
+    //     }
+    //   });
 
-      const data = await res.json();
-      console.log("Submitted:", data);
+    //   // append photos as File[] for multer
+    //   if (Array.isArray(updatedData.photos)) {
+    //     updatedData.photos.forEach(file => {
+    //       formData.append("photos", file);
+    //     });
+    //   }
 
-      onBack(); // success callback
-    } catch (err) {
-      console.error("Submit error:", err);
-    }
+    //   try {
+    //     const res = await fetch(`${BASE_URL}/api/property`, {
+    //       method: "POST",
+    //       body: formData, // IMPORTANT: no headers
+    //     });
+
+    //     const data = await res.json();
+
+    //     if (!res.ok) {
+    //       console.error("Server error:", data);
+    //       throw new Error(data.message || "Failed to create property");
+    //     }
+
+    //     console.log("Submitted:", data);
+
+    //     onBack(); // success callback
+    //   } catch (err) {
+    //     console.error("Submit error:", err);
+    //   }
   };
-
 
   const handleBack = () => {
     setCurrentStepIndex((i) => {
@@ -249,20 +225,18 @@ function PropertyForm({ propertyId, onBack }) {
     });
   };
 
-
   return (
     <div className={styles.formContainer}>
       <Tabs />
       <StepHeading />
-      {/* <StepComponent
-        data={propertyData[stepKey]}
-        onChange={setCurrentStepData}
-        onValidityChange={setIsStepValid}
-      /> */}
 
       <StepComponent
         // data={propertyData[stepKey]}
-        data={STEP_CONFIG[currentStepIndex].needsFullData? propertyData: propertyData[stepKey]}
+        data={
+          STEP_CONFIG[currentStepIndex].needsFullData
+            ? propertyData
+            : propertyData[stepKey]
+        }
         onChange={setCurrentStepData}
         onValidityChange={setIsStepValid}
       />

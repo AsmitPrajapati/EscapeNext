@@ -8,7 +8,7 @@ import Rough from "./pages/Rough Page/rough";
 import Contact from "./pages/Contact/contact";
 import Home from "./pages/Home/home";
 import Destination from "./pages/Destinations/destination";
-import SingleHotel from "./pages/SingleHotel/singleHotel";
+import Property from "./pages/PropertyDetails/propertyDetails";
 import PayGateway from "./pages/PayGateway/payGateway";
 
 import Dashboard from "./admin/pages/Dashboard/dashboard";
@@ -42,8 +42,8 @@ function App() {
             <Route path="/rough" element={<Rough />} />
             <Route path="/home" element={<Home />} />
             <Route path="/destination" element={<Destination />} />
-            <Route path="/singleHotel" element={<SingleHotel />} />
-            <Route path="/PayGateway" element={<PayGateway />} />
+            <Route path="/property/:id" element={<Property />} />
+            <Route path="/pay-gateway" element={<PayGateway />} />
             <Route path="/booking" element={<BookingsPage />} />
             <Route path="/log" element={<LogoutBtn />} />
 

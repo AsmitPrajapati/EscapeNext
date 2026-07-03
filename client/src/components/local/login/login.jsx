@@ -85,7 +85,7 @@ function Login({ onClose, switchAuth }) {
                 <input type="checkbox" />
                 <label>Remember me</label>
               </div>
-              <div className={styles.forgot}>Forget Password?</div>
+              <div className={styles.forgot} onClick={() => switchAuth("forgot-password")}>Forget Password?</div>
             </div>
           </div>
           <Btn text="Login" />
@@ -105,7 +105,7 @@ function Login({ onClose, switchAuth }) {
               Dont any account
               <span
                 className={styles.Signuplink}
-                onClick={switchAuth}
+                onClick={() => switchAuth("signup")}
               >
                 {" "}
                 Sign up

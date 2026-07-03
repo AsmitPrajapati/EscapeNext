@@ -106,7 +106,7 @@
 }
 
 
-@media (max-width: 992px){
+/* @media (max-width: 992px){
     .subContainer{
         flex-direction: column;
         gap: 32px;
@@ -119,7 +119,7 @@
 }
 
 /* Mobile adjustments */
-@media (max-width: 600px){
+/* @media (max-width: 600px){
     .container{
         padding: 20px 24px;
     }
@@ -139,5 +139,178 @@
 
     .mailBtn{
         max-width: 100%;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+/* 
+@media (max-width: 1024px) {
+    .container {
+        padding: 20px 40px;
+    }
+
+    .subContainer {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .subContainerLeft {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .footerColumn {
+        max-width: 45%;
+    }
+
+    .subContainerRight {
+        max-width: 100%;
+    }
+} */
+
+/* ================= MOBILE ================= */
+/* @media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .subContainerLeft {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footerColumn {
+        max-width: 100%;
+    }
+
+    .footerTitle,
+    .footerHeading,
+    .subscribeHeading {
+        font-size: 18px;
+    }
+
+    .subscribeText {
+        font-size: 14px;
+    }
+
+    .mailBox {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .mailBtn {
+        width: 100%;
+        text-align: center;
+    }
+} */
+
+/* ================= SMALL MOBILE ================= */
+/* @media (max-width: 480px) {
+    .footerTitle,
+    .footerHeading,
+    .subscribeHeading {
+        font-size: 16px;
+    }
+
+    .footerText,
+    .footerLink,
+    .mailText {
+        font-size: 13px;
+    }
+
+    .mailInput {
+        font-size: 14px;
+    }
+} */
+
+
+
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 24px 40px;
+    }
+
+    .subContainer {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .subContainerLeft {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .footerColumn {
+        max-width: 45%;
+    }
+
+    .subContainerRight {
+        max-width: 100%;
+    }
+}
+
+/* ================= MOBILE (≤768px) ================= */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .subContainerLeft {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footerColumn {
+        max-width: 100%;
+    }
+
+    .footerTitle,
+    .footerHeading,
+    .subscribeHeading {
+        font-size: 18px;
+    }
+
+    .footerText,
+    .footerLink,
+    .subscribeText {
+        font-size: 14px;
+    }
+
+    .mailBox {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .mailBtn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ================= SMALL MOBILE (≤480px) ================= */
+@media (max-width: 480px) {
+    .footerTitle,
+    .footerHeading,
+    .subscribeHeading {
+        font-size: 16px;
+    }
+
+    .footerText,
+    .footerLink,
+    .mailText {
+        font-size: 13px;
+    }
+
+    .mailInput {
+        font-size: 14px;
     }
 }

@@ -1,25 +1,39 @@
-.third{
-    height: 20px;
-    width: 106px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.third {
+  height: 20px;
+  width: 106px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.blueCircle{
-    height: 20px;
-    width: 20px;
-    background-color: #2289FF;
-    border-radius: 50%;
+.blueCircle {
+  height: 20px;
+  width: 20px;
+  background-color: #2289ff;
+  border-radius: 50%;
 }
-.circle{
-    height: 8px;
-    width: 8px;
-    border-radius: 4px;
-    background-color: #525252;
+.circle {
+  height: 8px;
+  width: 8px;
+  border-radius: 4px;
+  background-color: #525252;
 }
-.circle:hover{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    background-color: #2289FF;
+.circle:hover {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #2289ff;
+}
+
+@media (max-width: 639px) {
+  .third {
+    width: 90px;
+  }
+  .blueCircle {
+    height: 18px;
+    width: 18px;
+  }
+  .circle {
+    height: 6px;
+    width: 6px;
+  }
 }

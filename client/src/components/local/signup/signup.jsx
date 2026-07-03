@@ -108,7 +108,7 @@ function Signup({ onClose, switchAuth }) {
             </div>
             <div className={styles.secondField}>
               Already have an account?
-              <span className={styles.loginlink} onClick={switchAuth}> Login</span>
+              <span className={styles.loginlink} onClick={() => switchAuth("login")}> Login</span>
             </div>
           </div>
         </div>

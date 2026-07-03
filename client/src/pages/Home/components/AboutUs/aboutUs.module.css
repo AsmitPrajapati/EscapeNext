@@ -90,3 +90,54 @@
     text-align: justify;
     padding: 0 30px;
 }
+
+
+
+@media (max-width: 768px) {
+    .discription {
+        font-size: 14px;
+        padding: 0 10px;
+        text-align: left;
+    }
+    .name {
+        font-size: 20px;
+    }
+    .imgSection {
+        height: 70px;
+        width: 70px;
+    }
+    .card {
+        max-width: 100%;
+    }
+    .subContainer {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    .arrows {
+        align-self: center;
+    }
+    .heading {
+        font-size: 24px;
+    }
+    .top {
+        flex-direction: column;
+        gap: 16px;
+        height: auto;
+        align-items: flex-start;
+    }
+    .container {
+        padding: 20px;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 24px 40px;
+        gap: 30px;
+    }
+     .subContainer {
+        gap: 32px;
+    }
+}

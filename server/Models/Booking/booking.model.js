@@ -2,6 +2,21 @@ const mongoose = require("mongoose");
 
 const personalDetailsSchema = new mongoose.Schema(
   {
+    userId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User"
+    },
+
+    propertyId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Property"
+    },
+
+    roomId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Room"
+    },
+
     firstName: {
       type: String,
       trim: true,
@@ -33,6 +48,12 @@ const personalDetailsSchema = new mongoose.Schema(
     departDate: {
       type: Date,
     },
+    status: {
+    type: String,
+    enum: ["Pending", "Confirmed", "Cancelled"],
+    default: "Pending"
+    }
+
   },
   { timestamps: true }
 );
